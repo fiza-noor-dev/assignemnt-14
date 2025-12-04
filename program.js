@@ -42,14 +42,14 @@ square(10)
 //program 11
 var now=new Date();
 console.log(now)
-//program 12
-let today = new Date();
+//program 12 
+var today = new Date();
 console.log("Year:", today.getFullYear());
 console.log("Month:", today.getMonth() + 1); 
 console.log("Day:", today.getDate());
 
 //program 13
-let futureDate = new Date();
+var futureDate = new Date();
 futureDate.setFullYear(2030);
 console.log(futureDate);
 //program 14
@@ -57,15 +57,15 @@ let nextBirthday = new Date("2006-06-31");
 console.log("Next Birthday:", nextBirthday);
 //program 15
 function calculateAge(birthYear) {
-    let currentYear = new Date().getFullYear();
+    var currentYear = new Date().getFullYear();
     console.log("Your age is:", currentYear - birthYear);
 }
 calculateAge(2000);
 //program 15
-let todayDate = new Date();
-let endOfYear = new Date(todayDate.getFullYear(), 11, 31);
-let diffTime = endOfYear - todayDate;
-let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+var todayDate = new Date();
+  var endOfYear = new Date(todayDate.getFullYear(), 11, 31);
+var diffTime = endOfYear - todayDate;
+var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 console.log("Days left ", diffDays);
 //program 16
 function maxOfThree(a, b, c) {
